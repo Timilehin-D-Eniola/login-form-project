@@ -5,9 +5,88 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  background-color: #6e0f2d;
+  color: #f5dcd1;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color:#6e0f2d;
+  min-height: 60vh;
+  margin-left: 300px;
+  margin-right: 300px;
+  align-items: center;
+  font-family: Tahoma;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 60px;
+  font-family: Tahoma;
+  
+}
+
+.login-details {
+  background-color:#f5dcd1;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.buttons {
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.input-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-fields input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+
+}
+
+.buttons button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color:#6e0f2d;
+  color:#f5dcd1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color:#f5dcd1;
+  color: #6e0f2d;
+  border: 1px solid #6e0f2d;
+}
+
+@media (max-width: 500px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }}
